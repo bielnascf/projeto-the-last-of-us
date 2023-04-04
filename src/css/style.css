@@ -1,0 +1,189 @@
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    width: 100vw;
+    position: fixed;
+	background-color: rgba(0, 0, 0, 0.096);
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+header img {
+    height: 50px;
+}
+
+
+header nav {
+    display: flex;
+    padding-left: 635px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 15px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+
+header a:hover {
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home-logo:hover {
+	display: flex;
+	width: 70px;
+}
+
+main:after {
+	content: '';
+	min-height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+	z-index: -1;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: space-evenly;
+}
+
+.info .logo {
+	max-width: 350px;
+	filter: invert(1);
+	margin-bottom: 80px;
+}
+
+.info .description {
+	width: 49%;
+	font-size: 24px;
+	color: #ffffff;
+	line-height: 30px;
+}
+
+.info .credits {
+    color: white;
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+.info .credits a {
+    color: white;
+}
+
+.info .credits a:hover {
+    text-decoration: underline;
+}
+
+.carousel-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.carousel-buttons .button {
+	background-color: #ffffff;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	border-color: #ffffff;
+}
+
+.carousel-buttons .button.selected {
+	background-color: #1d8346;
+}
+
+.side-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.side-menu ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.side-menu .linkedin-icon {
+	width: 30px;
+	filter: invert(1);
+	transition: 0.5s ease-in-out;
+}
+
+.side-menu .github-icon{
+	width: 30px;
+	transition: 0.3s ease-in-out;
+}
+
+.side-menu .linkedin-icon:hover {
+	transform: scale(1.6);
+}
+
+.side-menu .github-icon:hover {
+	transform: scale(1.6);
+}
+
+.carousel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.carousel .image {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	display: none;
+	animation: mudarImagem 0.7s;
+}
+
+.carousel .image.active {
+	display: block;
+}
+
+@keyframes mudarImagem {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
+}
