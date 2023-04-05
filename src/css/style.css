@@ -13,6 +13,7 @@ header {
     position: fixed;
 	background-color: rgba(0, 0, 0, 0.096);
 	font-family: Arial, Helvetica, sans-serif;
+	z-index: 1;
 	
 }
 
