@@ -149,6 +149,7 @@ main:after {
 
 .side-menu .github-icon{
 	width: 30px;
+	filter: invert(1);
 	transition: 0.3s ease-in-out;
 }
 
